@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>STUDIO344</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese" rel="stylesheet">
+	<link rel="stylesheet" href="style2.css">
+
+	<link rel="icon" href="img/icon.png" type="image/png">
+	
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="site">
+			<a href="index.html"><img src="img/logo.jpg" alt="STUDIO344-logo"></a>
+			
+		</div>
+		
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html">TOP</a></li>
+				<li><a href="about/about.html">ABOUT</a></li>
+				<li><a href="portforio/portfolio.html">PORTFOLIO</a></li>
+				<li><a href="#contact-form" class="btn">お問い合わせ</a></li>
+			</ul>
+		</nav>
+
+		<button type="button" class="nav-button" onClick="navFunc()">
+			<span class="sr-only">MENU</span>
+		</button>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="catch">
+		<div class="container">
+			<h1><img src="img/logo.jpg" alt="STUDIO344"></h1>
+			<p id="ABOUT">Shotaro Miyoshi Portfolio Site</p>
+		</div>
+	</div>
+</section>
+
+<section class="message">
+	<div class="container">
+		<h2>ABOUT SITE</h2>
+		<p>東京都在住のウェブデザイナー、三好 翔太朗のポートフォリオサイトです。<br>2020年4月より勉強スタート！！まだまだ未熟な点は多いですが、日々できる事を少しづつ増やしていきます。どうぞ宜しくお願い致します。</p>
+		<p id="CONTENTS"></p>
+	</div>
+</section>
+
+<section class="service">
+	<div class="container">
+		<h2>CONTENTS</h2>
+		
+
+		<div class="details">
+			<article class="detail about">
+				<figure></figure>
+				<h3>ABOUT ME</h3>
+				<p>私のプロフィール<br>自己紹介・過去の経歴など</p>
+				<a href="about/about.html" class="btn">ABOUT ME</a>
+			</article>
+
+			<article class="detail works">
+				<figure></figure>
+				<h3>PORTFOLIO</h3>
+				<p>過去の制作物</p>
+				<a href="portforio/portfolio.html" class="btn">WORKS</a>
+			</article>
+
+			<article class="detail skill">
+				<figure></figure>
+				<h3>SKILLS</h3>
+				<p id="contact-form">私ができることまとめ
+					<br>※制作中です。
+				</p>
+				<a href="#" class="btn">SKILLS</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="contact" >
+	<div class="container" >
+		<div class="text">
+			<h2 >お問い合わせ</h2>
+			<h2>※現在制作中です。</h2>
+			<p>お仕事の依頼<br>
+				ご質問やお問い合わせ等<br>
+				些細なことでもお気軽にお問い合わせください。</p>
+		</div>
+
+		<form class="form">
+			<p>
+				<label>
+					<span class="sr-only">名前</span>
+					<input type="text" name="name"
+					 placeholder="名前">
+				</label>
+			</p>
+			<p>
+				<label>
+					<span class="sr-only">メールアドレス</span>
+					<input type="email" name="email"
+					 placeholder="メールアドレス">
+				</label>
+			</p>
+			<p>
+				<label>
+					<span class="sr-only">メッセージ</span>
+					<textarea name="msg"
+					 placeholder="メッセージを入力してください"></textarea>
+				</label>
+			</p>
+			<p>
+				<input type="submit" value="送信" class="btn">
+			</p>
+		</form>
+	</div>
+</section>
+
+
+
+<footer class="footer">
+	<div class="container">
+		<div class="info">
+			<div class="site">
+				<img src="img/logo.jpg" alt="STUDIO344">
+				<div>
+					<p class="corp">STUDIO344</p>
+				</div>
+			</div>
+
+
+		</div>
+
+		<ul class="sns">
+			<li><a href="#"><img src="img/logo-twitter.svg" alt="Twitter"></a></li>
+			<li><a href="#"><img src="img/logo-facebook.svg" alt="Facebook"></a></li>
+			<li><a href="#"><img src="img/logo-instagram.svg" alt="Instagram"></a></li>
+		</ul>
+	</div>
+</footer>
+
+<script>
+	function navFunc() {
+		document.querySelector('html').classList.toggle('open');
+	}
+</script>
+</body>
+</html>
