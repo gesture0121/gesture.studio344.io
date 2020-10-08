@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PORTFOLIO-STUDIO344</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese" rel="stylesheet">
+	<link rel="stylesheet" href="portfolio-stylesheet.css">
+
+	<link rel="icon" href="../img/icon.png" type="image/png">
+	
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="site">
+			<img src="../img/logo.jpg" alt="STUDIO344-logo">
+			
+		</div>
+		
+		<nav class="nav">
+			<ul>
+				<li><a href="../index.html">TOP</a></li>
+				<li><a href="../about/about.html">ABOUT</a></li>
+				<li><a href="#contact-form" class="btn">お問い合わせ</a></li>
+			</ul>
+		</nav>
+
+		<button type="button" class="nav-button" onClick="navFunc()">
+			<span class="sr-only">MENU</span>
+		</button>
+	</div>
+</header>
+
+
+
+
+<div class="potfolio">
+    <div class="container">
+        <div class="SEISAKUBUTU">
+		   
+			<h3>PORTFOLIO</h3><br><br>
+			<h4>WEBサイト制作</h4>
+
+			<div class="saito">
+				<div class="privatecafe">
+					<p>▼沖縄のプライベートカフェ</p>
+				
+				</div>
+				<a href="YAMACAFE/index.html" target="_blank" rel="noopener noreferrer"><img src="portfolio_img/cafe01.JPG"></a>
+				<h5><a href="YAMACAFE/index.html" target="_blank" rel="noopener noreferrer">
+					ページ全体を表示（別タブで表示）</a></h5>
+				<div class="saito-setumei">
+					<p>
+						概要　　：沖縄の店舗サイト<br>
+						使用言語：HTML,CSS,JavaScript<br>
+						制作期間：1週間<br>
+						<p>デザイン：勉強として、架空のカフェサイトを制作</p>
+						<p>JavaScriptを使用して地図を埋め込みました。</p>
+						<p>また、レスポンシブデザインにも対応しております。</p>
+					</p>
+				</div>
+
+			</div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<footer class="footer">
+	<div class="container">
+		<div class="info">
+			<div class="site">
+				<img src="../img/logo.jpg" alt="STUDIO344">
+				<div>
+					<p class="corp">STUDIO344</p>
+				</div>
+			</div>
+
+
+		</div>
+
+		<ul class="sns">
+			<li><a href="#"><img src="../img/logo-twitter.svg" alt="Twitter"></a></li>
+			<li><a href="#"><img src="../img/logo-facebook.svg" alt="Facebook"></a></li>
+			<li><a href="#"><img src="../img/logo-instagram.svg" alt="Instagram"></a></li>
+		</ul>
+	</div>
+</footer>
+
+<script>
+	function navFunc() {
+		document.querySelector('html').classList.toggle('open');
+	}
+</script>
+</body>
+</html>
